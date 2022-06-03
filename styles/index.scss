@@ -138,3 +138,168 @@ body {
     }
   }
 }
+
+// second part of the banner----------------------------------------
+.banner-two {
+  // background: red;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  width: 90%;
+  margin: 0 auto;
+
+  &_left {
+    width: 45%;
+    height: auto;
+    margin-left: 2em;
+
+    img {
+      width: 100%;
+      height: 80%
+    }
+
+  }
+
+  &_right {
+    width: 45%;
+
+    .banner-two_heading {
+      width: 100%;
+      top: 67em;
+      font-family: inter;
+      font-weight: 700;
+      font-size: 1.6em;
+      line-height: 55px;
+      color: $black;
+    }
+
+    .banner-two_paragraph {
+      font-family: inter;
+      font-weight: 400;
+      font-size: 1.12em;
+      line-height: 21.78px;
+    }
+
+  }
+
+}
+
+.recent-report {
+  box-sizing: border-box;
+  background: $primary;
+  color: $white;
+  width: 100%;
+  height: 50%;
+  margin-top: 50px;
+
+  &_inner {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+    .recent-report_subbheading {
+      display: flex;
+      justify-content: space-between;
+
+    }
+  }
+
+  .recent-report_one {
+    width: 20%;
+    border: 2px solid white;
+    background-color: $white;
+    color: $black;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .recent-report_two {
+    @extend .recent-report_one;
+  }
+
+  .recent-report_three {
+    @extend .recent-report_one;
+  }
+
+  .recent-report_four {
+    @extend .recent-report_one;
+  }
+
+  .recent-report_image {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .white {
+    position: relative;
+    left: 500px;
+  }
+
+}
+
+.box1_heading {
+  box-sizing: border-box;
+  background: $white;
+  color: $black;
+  width: 100%;
+  height: 50%;
+
+
+  .subheading_text {
+    width: 650px;
+    height: 150px;
+    line-height: 58px;
+    padding-left: 40px;
+  }
+
+  .subheading_text h2 {
+    font-weight: 700px;
+    font-size: 48px;
+  }
+
+
+
+  .inner_boxes {
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;
+    height: 50%;
+    justify-content: center;
+  }
+
+  .box {
+    width: 317px;
+    height: 257px;
+    background-color: $white;
+    color: $black;
+
+
+
+  }
+
+  .inner_boxes1 {
+    @extend .inner_boxes
+  }
+
+
+}
+
+footer {
+  text-align: center;
+  background-color: $primary;
+  color: white;
+  width: 1440px;
+  height: 50px;
+  padding: 50px 0;
+  font-Weight: 400;
+  font-Size: 16px;
+  margin-top: 70px;
+
+}
